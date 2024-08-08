@@ -1,0 +1,16 @@
+services:
+  vue-dev:
+    build:
+      context: ./docker/vue-dev
+      args:
+        TIME_ZONE: ${TIME_ZONE-UTC}
+    tty: true
+    stdin_open: true
+    volumes:
+      - ../:/var/www/html
+    working_dir: /var/www/html
+
+networks:
+  default:
+    name: dev-net
+    external: true
