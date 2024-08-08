@@ -1,5 +1,14 @@
 <script setup lang="ts">
+import { onMounted } from 'vue'
 import HelloWorld from './components/HelloWorld.vue'
+import { useSample } from './sample'
+
+const { hello } = useSample()
+
+onMounted(() => {
+  hello()
+})
+
 </script>
 
 <template>
