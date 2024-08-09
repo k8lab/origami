@@ -1,8 +1,8 @@
-const o = () => ({
+const l = () => ({
   hello: () => {
     console.log("hello world");
   }
-});
+}), { hello: e } = l();
 export {
-  o as useSample
+  e as hello
 };
