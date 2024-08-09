@@ -8,10 +8,18 @@ export default defineConfig({
   build: {
     lib: {
       entry: resolve(__dirname, 'src/sample.ts'),
-      name: 'sample',
-      fileName: 'sample',
+      name: 'origami',
+      fileName: 'origami',
       formats: ['es', 'umd']
     },
+    rollupOptions: {
+      external: ['vue'],
+      output: {
+        globals: {
+          vue: 'Vue',
+        }
+      }
+    }
   },  
   plugins: [
     vue(),

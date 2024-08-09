@@ -3,22 +3,6 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vue-tsc -b && vite build",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "@types/node": "^22.1.0",
-    "vue": "^3.4.35"
-  },
-  "devDependencies": {
-    "@vitejs/plugin-vue": "^5.1.2",
-    "typescript": "^5.5.3",
-    "vite": "^5.4.0",
-    "vite-plugin-dts": "^4.0.1",
-    "vue-tsc": "^2.0.29"
-  },
   "main": "./dist/index.umd.cjs",
   "module": "./dist/index.js",
   "types": "./types/sample.d.ts",
@@ -35,5 +19,21 @@
       "require": "./dist/index.umd.cjs",
       "import": "./dist/index.js"
     }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@types/node": "^22.1.0",
+    "vue": "^3.4.35"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.1.2",
+    "typescript": "^5.5.3",
+    "vite": "^5.4.0",
+    "vite-plugin-dts": "^4.0.1",
+    "vue-tsc": "^2.0.29"
   }
 }
