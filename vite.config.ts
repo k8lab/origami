@@ -8,8 +8,8 @@ export default defineConfig({
   build: {
     lib: {
       entry: resolve(__dirname, 'src/index.ts'),
-      name: 'origami',
-      fileName: 'origami',
+      name: 'sample',
+      fileName: 'sample',
       formats: ['es', 'umd']
     },
     rollupOptions: {

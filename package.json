@@ -3,9 +3,8 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "main": "./dist/index.umd.cjs",
-  "module": "./dist/index.js",
-  "types": "./types/sample.d.ts",
+  "main": "./dist/sample.umd.cjs",
+  "module": "./dist/sample.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/k8lab/origami"
@@ -16,8 +15,8 @@
   ],
   "exports": {
     ".": {
-      "require": "./dist/index.umd.cjs",
-      "import": "./dist/index.js"
+      "require": "./dist/sample.umd.cjs",
+      "import": "./dist/sample.js"
     }
   },
   "scripts": {
