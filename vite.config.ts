@@ -24,6 +24,7 @@ export default defineConfig({
   plugins: [
     vue(),
     dts({
+      tsconfigPath: resolve(__dirname, "tsconfig.app.json"),
       exclude: ['src/main.ts']
     })
   ],

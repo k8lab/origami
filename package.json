@@ -5,6 +5,7 @@
   "type": "module",
   "main": "./dist/sample.umd.cjs",
   "module": "./dist/sample.js",
+  "types": "./dist/sample.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/k8lab/origami"

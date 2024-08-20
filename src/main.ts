@@ -1,6 +1,8 @@
 import { createApp } from 'vue'
 import './style.css'
 import App from './App.vue'
-// import { hello } from 'k8lab/origami'
+// import { hello } from 'origami'
+
+// hello()
 
 createApp(App).mount('#app')
